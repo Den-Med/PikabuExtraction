@@ -1,0 +1,8 @@
+.player__playbackRate {cursor: pointer; padding: 16px 5px 16px 1px;}
+.player__playbackRate:hover > .playbackValue {display: block;}
+.playbackValue {display: none; position: absolute; bottom: 50%; padding: 4px;}
+
+.hiddenLink:hover   {visibility: visible;}
+.hiddenLink::before {visibility: visible; content: "➖";}
+.hiddenLink         {visibility: hidden;}
+.notHiddenLink::before {content: "➕";}
