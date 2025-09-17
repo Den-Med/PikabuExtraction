@@ -1,0 +1,35 @@
+{
+  "name": "Pikabu - пикабушечка",
+  "description": "Делает Пикабу чуть лучше",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": ["https://pikabu.ru/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "pkb_ext.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://pikabu.ru/*"], 
+      "world": "ISOLATED",
+      "run_at": "document_start",
+      "js": ["pkb_injection_script_isol.js"],
+      "css": ["pkb_ext.css"]
+    },
+    {
+      "matches": ["https://pikabu.ru/*"], 
+      "world": "MAIN",
+      "run_at": "document_start",
+      "js": ["pkb_injection_script_main.js"],
+      "css": ["pkb_ext.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
