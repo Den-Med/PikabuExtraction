@@ -63,16 +63,37 @@ function prepareHandler(selector, nodeHandler) {
 
 const factory = {
   betterCarousel: function (){
-    stEl = document.createElement('style');
+    const stEl = document.createElement('style');
     stEl.textContent = `button.carousel__scroll.button {height: 100%; border-radius: 0%; border: none; width: 40px; background-color: var(--cariusel_bgc); box-shadow: none;}
       button.carousel__scroll_right {right: 0px;}
-      button.carousel__scroll_left {left: 0px;}`
+      button.carousel__scroll_left {left: 0px;}`;
+    stEl.id = 'betterCarousel';
     document.head.appendChild(stEl);
     root.style.setProperty('--cariusel_bgc', '#31313191');
   },
 
   changeColors: function (){
     Object.entries(settings.color).forEach(att => root.style.setProperty('--' + att[0], att[1].value));
+  },
+
+  noAvatarLevel: function (){
+    const stEl = document.createElement('style');
+    stEl.textContent = '.avatar__inner::before {border: none !important;}'
+    stEl.id = 'noAvatarLevel';
+    document.head.appendChild(stEl);
+  },
+
+  betterCollapse: function(){
+    const stEl = document.createElement('style');
+    stEl.textContent = `.story__scroll > div.collapse-button:hover { background-color: #444751; } 
+    div.story__scroll {
+      padding-bottom: 20px;
+      border-bottom: 1px solid;
+      border-radius: 3px;
+      border-bottom-color: #2e2f33;
+    }`;
+    stEl.id = 'betterCollapse';
+    document.head.appendChild(stEl);
   },
 
   cleanLink: function (){

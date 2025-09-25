@@ -11,7 +11,7 @@ settings.color = {
 
 settings.checkbox = {
   changeColors: {text: 'Изменить цвета', value: true, uiF: 'colorGridHandler'},
-  betterCarousel: {text: 'Чуть лучше карусель', value: true},
+  betterCarousel: {text: 'Лучше карусель', value: true},
   cleanLink: {text: 'Чистые ссылки', value: true},
   playbackRate: {text: 'Скорость видео', value: true},
   noPauseVideo: {text: 'Нет автопаузе', value: true},
@@ -22,7 +22,9 @@ settings.checkbox = {
   hideEmotions: {text: 'Скрыть реакции', value: true, uiF: 'hideEmotions', subVal: {
     comment: {text: 'В комментариях', value: true}, 
     story: {text: 'Под постом',value: true} 
-  }}
+  }},
+  noAvatarLevel: {text: "Нет обвотдки аватарок", value: true},
+  betterCollapse: {text: 'Лучше кнопка "свернуть"', value: true},
 };
 
 function setBackup(obj){
