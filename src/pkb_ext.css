@@ -1,3 +1,7 @@
+:root{
+  --bcbgc: #31313191
+}
+
 .player__playbackRate {cursor: pointer; padding: 16px 5px 16px 1px;}
 .player__playbackRate:hover > .playbackValue {display: block;}
 .playbackValue {display: none; position: absolute; bottom: 50%; padding: 4px;}
@@ -8,10 +12,20 @@
 .notHiddenLink::before {content: "➕";}
 
 
-
-html.betterCarousel button.carousel__scroll.button {height: 100%; border-radius: 0%; border: none; width: 40px; background-color: var(--cariusel_bgc); box-shadow: none;}
+html.betterCarousel button.carousel__scroll.button {height: 100%; border-radius: 0%; border: none; width: 40px; background-color: var(-bcbgc); box-shadow: none;}
 html.betterCarousel button.carousel__scroll_right {right: 0px;}
 html.betterCarousel button.carousel__scroll_left {left: 0px;}
+html.betterCarousel div.image-viewer__nav-arrow {
+    height: 80%;
+    border-radius: 0%;
+    border: none;
+    width: 50px;
+    box-shadow: none;
+    transform: translate(0%, -50%);
+    background: linear-gradient(0deg, transparent, var(-bcbgc) 30%, var(-bcbgc) 70%, transparent);
+}
+html.betterCarousel div.image-viewer__nav-arrow_prev {right: 0px;}
+html.betterCarousel div.image-viewer__nav-arrow_left {left: 0px;}
 
 html.noAvatarLevel .avatar__inner::before {border: none !important;}
 

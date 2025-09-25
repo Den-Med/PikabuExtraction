@@ -6,7 +6,6 @@ settings.color = {
   'color-primary-900': {text: "Primary 900", value: "#679d47"},
   'color-black-800': {text: "Black 800", value: "#8f939d"},
   'color-bright-800': {text: "Bright 800", value: "#1f2023"},
-  'collapse-hover': {text: "Collapse hover", value: "#444751"}
 };
 
 settings.checkbox = {
