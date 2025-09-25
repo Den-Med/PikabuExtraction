@@ -6,3 +6,19 @@
 .hiddenLink::before {visibility: visible; content: "➖";}
 .hiddenLink         {visibility: hidden;}
 .notHiddenLink::before {content: "➕";}
+
+
+
+html.betterCarousel button.carousel__scroll.button {height: 100%; border-radius: 0%; border: none; width: 40px; background-color: var(--cariusel_bgc); box-shadow: none;}
+html.betterCarousel button.carousel__scroll_right {right: 0px;}
+html.betterCarousel button.carousel__scroll_left {left: 0px;}
+
+html.noAvatarLevel .avatar__inner::before {border: none !important;}
+
+html.betterCollapse .collapse-button:hover { background-color: #444751; } 
+html.betterCollapse .story__scroll {
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  border-radius: 3px;
+  border-bottom-color: #2e2f33;
+}
