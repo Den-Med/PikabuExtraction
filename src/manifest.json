@@ -18,8 +18,8 @@
       "matches": ["https://pikabu.ru/*"], 
       "world": "ISOLATED",
       "run_at": "document_start",
-      "js": ["pkb_injection_script_isol.js"],
-      "css": ["pkb_ext.css"]
+      "js": ["pkb_injection_script_isol.js"]
+      
     },
     {
       "matches": ["https://pikabu.ru/*"], 

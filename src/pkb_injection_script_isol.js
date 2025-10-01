@@ -231,7 +231,7 @@ const factory = {
     function toggleClass(e){
       if (e.target !== this) return;
       const cl = e.currentTarget.classList;
-      cl.toggle(notHiddenCl, !t.toggle(hiddenCl))
+      cl.toggle(notHiddenCl, !cl.toggle(hiddenCl))
     };
 
     document.addEventListener('DOMContentLoaded', ()=>{
